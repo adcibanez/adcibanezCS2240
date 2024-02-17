@@ -1,0 +1,146 @@
+
+.container {  
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 900px auto auto auto auto;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Title Title Title Title Title"
+    "Navigation-Menu Hiragana Hiragana Katakana Katakana"
+    "Navigation-Menu Hiragana Hiragana Katakana Katakana"
+    "Kanji Kanji Kanji Kanji Kanji";
+
+}
+h1 {
+    font-family:'Mochiy Pop One';
+
+}
+.Title { 
+    grid-area: Title; 
+    text-align: center;
+    color:white;
+    text-shadow: 3px 3px black;
+    
+}
+
+.backvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #141c23;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .backvideo {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .backvideo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.Hiragana { 
+    grid-area: Hiragana; 
+    background-color: #141c23;
+}
+
+.Katakana { 
+    grid-area: Katakana; 
+}
+
+.Navigation-Menu { 
+    grid-area: Navigation-Menu; 
+    display: block;
+    width: 200px;
+}
+
+
+.Kanji { 
+    grid-area: Kanji; 
+}
+
+#CharJPA, #CharJPI, #CharJPU, #CharJPE, #CharJPO {
+    line-height:60px;
+    border:2px solid;
+    font-size: 40px;
+    text-align:center;
+    align-items: center;
+    width:80px;
+    height:60px;
+    }
+
+#CharENA, #CharENI, #CharENU, #CharENE, #CharENO {
+    line-height:60px;
+    width:80px;
+    height:60px;
+    border:2px solid;
+    font-size: 40px;
+    text-align:center;
+    }
+
+    .hiraganaJP {
+    display:inline-block;
+    background-color:#45ADA8;
+    }
+
+    .aiueoEN {
+    display:inline-block;
+    background-color:#A2D5AB;
+    }
+
+    .space {
+    border:block;
+    }
+   
+    .subheadingH {
+    text-indent: 5px;
+    letter-spacing: 2px;
+    font-family: 'Rampart One';
+    }
+    
+   h3 {
+        font-family:'Yusei Magic';
+    }
+
+    .hiraganabox {
+        padding: 10px;
+        background-color: #f9f8f7;
+        box-shadow: 15px 15px #568EA6;
+        border-radius: 20px;
+    }
+
+    .katakanabox {
+        padding: 10px;
+        background-color: #f9f8f7;
+        box-shadow: 15px 15px #d84f2a;
+        border-radius: 20px;
+    }
+
+    .navigationbox {
+        padding: 10px;
+        background-color: #f9f8f7;
+        box-shadow: 15px 15px #e3b505;
+        border-radius: 20px;
+
+
+    }
+    html {
+            scroll-behavior: smooth;
+            background-color: #141c23;
+            
+        }
+    .kanjibox {
+        padding: 10px;
+        background-color: #f9f8f7;
+        box-shadow: 15px 15px #f26627;
+        border-radius: 20px;
+    }
+
