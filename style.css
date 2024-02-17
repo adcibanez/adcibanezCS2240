@@ -137,10 +137,30 @@ h1 {
             background-color: #141c23;
             
         }
+
     .kanjibox {
         padding: 10px;
         background-color: #f9f8f7;
         box-shadow: 15px 15px #f26627;
         border-radius: 20px;
+    }
+
+    table {
+        line-height:60px;
+        border:2px solid;
+        font-size: 40px;
+        text-align:center;
+        align-items: center;
+        width:80px;
+        height:60px;
+    }
+
+    th {
+        background-color:#45ADA8;
+        
+    }
+
+    td {
+        background-color:#A2D5AB;
     }
 
